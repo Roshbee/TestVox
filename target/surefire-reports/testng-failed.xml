@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="apiTest.ReqresApiTest">
+        <methods>
+          <include name="testDeleteUser"/>
+          <include name="testCreateUser"/>
+        </methods>
+      </class> <!-- apiTest.ReqresApiTest -->
+      <class name="test.AddEmployeeTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="addEmployeeTest"/>
+        </methods>
+      </class> <!-- test.AddEmployeeTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
